@@ -1,0 +1,174 @@
+body {
+    background-color: black;
+}
+
+#wrapper {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#left-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 150px;
+    width: 600px;
+    height: 860px;
+    background-image: url("../img/background.jpg");
+    background-size: 100% 100%;
+}
+
+
+.main-title {
+    font-size: 74px;
+    font-family: 'Hanalei Fill';
+    text-align: center;
+    /* padding-top: 10px; */
+    padding-bottom: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    top: 250px;
+}
+
+.material-symbols-outlined {
+    font-size: 1.6em !important;
+    position: relative;
+    top: 25px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'grad' 0,
+    'opsz' 70;
+}
+
+#right-page {
+    width: 700px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    --left-padding: 25px;
+}
+
+.p {
+    font-family: 'Playfair Display';
+}
+
+.p--presentation {
+    font-size: 20px;
+    font-weight: 500px;
+}
+.presentation-wrapper {
+    padding-left: var(--left-padding);
+    padding-right: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-global-wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    gap: 75px;
+    padding-left: var(--left-padding);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* box-shadow: 0px 10px 8px lightgray; */
+    box-shadow: 0px 10px 8px lightgray;
+}
+
+#input-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#input-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    border-radius: 0.35em;
+    border: 1px solid gray;
+    background-color: rgb(255, 251, 246);
+    width: 220px;
+    height: 20px;
+    transition-duration: 0.4s;
+}
+
+.input--basic:focus {
+    border: 1px solid deepskyblue;
+    outline: none !important;
+    box-shadow: 1px 1px 1px rgba(0, 0, 255, 0.4), -1px -1px 1px rgba(0, 0, 255, 0.4);
+}
+
+.input--nok {
+    border: 1px solid red;
+    outline: none !important;
+    box-shadow: 1px 1px 1px red, -1px -1px 1px red;
+}
+
+.input--ok {
+    border: 1px solid green;
+    outline: none !important;
+    box-shadow: 1px 1px 1px green, -1px -1px 1px green;
+}
+
+.label {
+    font-family: 'Playfair Display';
+    font-size: 14px;
+}
+
+.button-wrapper {
+    padding-left: var(--left-padding);
+}
+
+.button {
+    padding: 18px 60px;
+    border-radius: 30px;
+    border: 2px solid deepskyblue;
+    color: black;
+    font-size: 15px;
+    font-weight: 900;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    color: white;
+    background-color: deepskyblue;
+}
+
+.login-wrapper {
+    padding-left: var(--left-padding);
+}
+
+.p--login {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.a {
+    font-weight: bold;
+    color: deepskyblue;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.a:hover {
+    color: lightgrey;
+}

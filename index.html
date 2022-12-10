@@ -5,57 +5,70 @@
   <title>Page Title</title>
   <link rel="stylesheet" href="./css/style.css">
   <script src="./js/main.js" defer></script>
+  <!-- Google Icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+  <!-- Google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hanalei+Fill">
 </head>
 <body>
+  <div id="wrapper">
     <div id="left-page">
-      <div></div>
-      <div class="main-title"></div>
+      <div class="main-title"><span class="material-symbols-outlined">water_drop</span>Underwater</div>
     </div>
+    
     <div id="right-page">
       <div class="presentation-wrapper">
-        <p class="p p--presentation"></p>
+        <p class="p p--presentation">This is not a real site. You won't get nothing real from it. But what's <em>real</em> ? Come and dive in the depth of yourself, and you'll find more that you expected. Sign up now to get started.</p>
+        <p class="p p--presentation">You don't know yet, but you need to</p>
       </div>
       
-      <div class="form-wrapper">
-        <form class="form">
-          <div class="input-wrapper">
-            <div id="input-left">
-              <label class="label">First Name
-                <input class="input" type="text" name="firstname">
-              </label>
-             
-              <label class="label">Email
-                <input class="input" type="email" name="email">
-              </label>
-             
-              <label class="label">Password
-                <input class="input" type="password" name="password">
-              </label>
+      <form class="form">
+        <div class="input-global-wrapper">
+          <div id="input-left">
+            <div class="input-wrapper">
+              <label class="label" for="firstname">First Name</label>
+                <input class="input input--basic" type="text" name="firstname" placeholder="John" required>
             </div>
-            <div id="input-right">
-              <label class="label">Last Name
-                <input class="input" type="text" name="lastname">
-              </label>
-             
-              <label class="label">Phone Number
-                <input class="input" type="Text" name="phone">
-              </label>
-             
-              <label class="label">Repeat Password
-                <input class="input" type="password" name="password-bis">
-              </label>
+            
+            <div class="input-wrapper">
+              <label class="label" for="email">Email</label>
+                <input class="input input--basic" type="email" name="email" placeholder="john.doe@mail.com" required>
+            </div>
+            
+            <div class="input-wrapper">
+              <label class="label" for="password">Password</label>
+                <input class="input input--password" type="password" name="password" placeholder="********" required>
             </div>
           </div>
           
-          <div class="button-wrapper">
-            <button class="button">Create Account</button>
+          <div id="input-right">
+            <div class="input-wrapper">
+              <label class="label" for="lastname">Last Name</label>
+                <input class="input input--basic" type="text" name="lastname" placeholder="Doe" required>
+              </div>
+            
+            <div class="input-wrapper">
+              <label class="label" for="phone">Phone Number</label>
+                <input class="input input--basic" type="text" name="phone" placeholder="+33612345678" required>                
+            </div>
+            
+            <div class="input-wrapper">
+              <label class="label" for="password-bis">Repeat Password</label>
+                <input class="input input--password" type="password" name="password-bis" placeholder="********" required>
+            </div>
           </div>
-          
-          <div class="login-wrapper">
-            <p class="p p--login"> Already have an account ? <a class="a" href="./index.html">Log in<a></p>
-          </div>
-        </form>
-      </div>
+        </div>
+        
+        <div class="button-wrapper">
+          <button class="button" type="submit">Create Account</button>
+        </div>
+        
+        <div class="login-wrapper">
+          <p class="p p--login"> Already have an account ? <a class="a" href="./index.html">Log in<a></p>
+        </div>
+      </form>
     </div>
+  </div>
 </body>
 </html>
